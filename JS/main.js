@@ -94,11 +94,11 @@ function scrollWin(el){
 
 //SCROLL TO TOP 
 
-
+const sectionBanner = document.querySelector('section.banner')
 
 window.addEventListener('scroll', ()=>{
     const scrollUP = document.querySelector('.scroll-up')
-    scrollUP.classList.toggle('scrollDisplay', window.scrollY > 250)
+    scrollUP.classList.toggle('scrollDisplay', window.scrollY > sectionBanner.clientHeight)
 
     scrollUP.addEventListener('click', ()=>{
         document.body.scrollIntoView({

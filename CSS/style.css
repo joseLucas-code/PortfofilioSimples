@@ -90,6 +90,7 @@ i.fa-chevron-down{
     display: none;
     animation: fade 1s;
     cursor: pointer;
+    z-index: 3;
 }
 
 .scroll-up.scrollDisplay{
