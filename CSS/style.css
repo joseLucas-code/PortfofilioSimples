@@ -225,11 +225,21 @@ span.single-dot.activeDot{
 
 .about-container{
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .about-img{
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img h1{
+    font-size: 2rem;
+    margin-bottom: 20px; 
 }
 
 .about-img img{
@@ -257,10 +267,14 @@ span.single-dot.activeDot{
 
 /*SKILL STYLING*/
 
-article.skills{
+article.skills .skill-flex{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+}
+
+article.skills > h1{
+    margin: 15px;
 }
 
 .single-skill{
@@ -278,10 +292,6 @@ article.skills{
     text-transform: uppercase;
     font-weight: 600;
     color: #2a404e;
-}
-
-p.percent{
-    margin-right: 20%;
 }
 
 .skill-bar{
