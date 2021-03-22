@@ -118,14 +118,14 @@ window.addEventListener('scroll', ()=>{
     textPercent[0].innerText = "100%";
     skillPercent[0].style.width = "100%";
 
-    textPercent[1].innerText = "95%";
-    skillPercent[1].style.width = "95%";
+    textPercent[1].innerText = "15%";
+    skillPercent[1].style.width = "15%";
 
     textPercent[2].innerText = "99%";
     skillPercent[2].style.width = "98%";
 
-    textPercent[3].innerText = "??%";
-    skillPercent[3].style.width = "0%";
+    textPercent[3].innerText = "10%";
+    skillPercent[3].style.width = "10%";
 
 
 })();
