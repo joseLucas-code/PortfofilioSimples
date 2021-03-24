@@ -370,6 +370,44 @@ section.works{
     top: 45%;
 }
 
+/*FULL SCREEN VIEW WORKS*/
+
+.fullView{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    background:rgba(0, 0, 0,.9);
+    z-index: 4;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullView.fullViewOpen{
+    display:flex;
+}
+
+.fa-times{
+    color:#FFF;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.box-image img{
+    object-fit: contain;
+    padding: 8%;
+    max-width: 1200px;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+}
+
+
 /*SERVICES STYLING*/
 
 section.services{
@@ -654,6 +692,15 @@ footer p a:hover{
     .single-image:hover i {
         opacity: 1;
         top: 50%;
+    }
+
+    .box-image img{
+        object-fit: contain;
+        padding: 2%;
+        max-width: 1200px;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100%;
     }
 }
 

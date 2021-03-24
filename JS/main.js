@@ -130,3 +130,24 @@ window.addEventListener('scroll', ()=>{
 
 })();
 
+
+// works
+
+const singlesImages = document.querySelectorAll('.single-image')
+const fullView = document.querySelector('.fullView')
+const closeView = document.querySelector('.fullViewClose')
+
+
+singlesImages.forEach((box,boxIndex)=> box.addEventListener('click',()=>{
+    const boxImage = document.querySelector('.box-image img')
+    
+    fullView.classList.add('fullViewOpen')
+    document.body.classList.add('overflowHidden')
+    boxImage.src = `IMG/pic-${(boxIndex + 1)}.jpg`
+}))
+
+
+closeView.onclick = function(){
+    fullView.classList.remove('fullViewOpen')
+    document.body.classList.remove('overflowHidden')
+}
