@@ -124,7 +124,7 @@ window.addEventListener('scroll', ()=>{
     textPercent[2].innerText = "??%";
     skillPercent[2].style.width = "0%";
 
-    textPercent[3].innerText = "850%";
+    textPercent[3].innerText = "85%";
     skillPercent[3].style.width = "85%";
 
 
