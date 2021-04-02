@@ -298,7 +298,7 @@ div.skills > h3{
     width: 20%;
 }
 
-/*WORK STYLING*/
+/*CERTIFICATE STYLING*/
 
 section.certificate{
     background: #2E3E4E;
@@ -511,18 +511,20 @@ form.form-container textarea::placeholder{
 }
 
 form.form-container input[type='submit']{
-    
-    background: none;
+    padding: 10px 15px;
+    background: #ef664d;
     border: none;
-    color: #ef664d;
-    font-size: 1rem;
+    color: #D5D6D7;
+    font-size: .8rem;
     text-align: right;
     cursor: pointer;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 form.form-container input[type='submit']:hover{
     color: #D5D6D7;
+    background: #e45d45;
 }
 
 
