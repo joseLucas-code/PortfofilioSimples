@@ -17,7 +17,7 @@ body.overflowHidden{
     overflow: hidden;
 }
 
-h1.title-orange{
+h2.title-orange{
     font-family: 'Arvo', serif;
     color: #ef664d;
     font-size: 2.4rem;
@@ -25,7 +25,7 @@ h1.title-orange{
     text-transform: uppercase;
 }
 
-h1.title-dark-blue{
+h2.title-dark-blue{
     font-family: 'Arvo', serif;
     color: #2a404e;
     font-size: 2.4rem;
@@ -35,21 +35,13 @@ h1.title-dark-blue{
 
 p.white-background{
     font-size: .9rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #7e7e7e;
+    color: #000;
     padding: 10px 44px;
     text-align: center;
 }
 
 p.dark-blue-background{
     font-size: .9rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     color: white;
     padding: 10px 44px;
     text-align: center;
@@ -219,35 +211,39 @@ span.single-dot.activeDot{
     padding: 40px 0;
 }
 
-.about-me h1{
-    color: #2a404e;
+.about-me h2{
+    margin-bottom: 50px;
 }
 
 .about-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.about-img{
-    width: 30%;
+.about-user{
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.about-img h1{
-    font-size: 2rem;
-    margin-bottom: 20px; 
-}
-
-.about-img img{
-    width: 100%;
+.about-user img{
+    max-width: 100%;
     border-radius: 50%;
     border: 2px solid #ef664d;
     margin-left: 15px;
+    object-fit: contain;
 }
+
+.about-user h3.about-username{
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
 
 .about-content-text{
     flex: 1;
@@ -255,25 +251,16 @@ span.single-dot.activeDot{
     text-align: center;
 }
 
-.about-content-text p {
-    font-size: .9rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    color: #7e7e7e;
-    padding: 10px 44px;
-}
-
 /*SKILL STYLING*/
 
-article.skills .skill-flex{
+div.skills .skill-flex{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
-article.skills > h1{
+div.skills > h3{
+    font-size: 1.5rem;
     margin: 15px;
 }
 
@@ -302,7 +289,7 @@ article.skills > h1{
 }
 
 .skill-percent{
-    width: 80%;
+    width: 0%;
     height: 15px;
     background: #ef664d;
 }
@@ -313,23 +300,18 @@ article.skills > h1{
 
 /*WORK STYLING*/
 
-section.works{
+section.certificate{
     background: #2E3E4E;
     padding: 40px 2%;
     text-align: center;
     padding: 40px 0;
 }
 
-.work-text h1{
-    color: #ef664d;
-    margin-bottom: 15px;
-}
-
-.work-text p{
+.certificate-text p{
     color: white;
 }
 
-.work-gallery{
+.certificate-gallery{
     min-height: 500px;
     background: url(../IMG/left.png) no-repeat;
     background-size: 100% 100%;
@@ -352,6 +334,7 @@ section.works{
     width: 100%;
     max-width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .single-image i {  
@@ -442,7 +425,6 @@ section.services{
 }
 
 .services-box-single p {
-    color: #7e7e7e;
     font-size: .9rem;
 }
 
@@ -470,15 +452,22 @@ section.contact{
 }
 
 form.form-container{
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 0 auto;
 }
 
 .input-wraper{
-    width: 30%;
+    width: 100%;
     border-bottom: 1px solid #B3B4B9;
-    margin: 0 10px;
+    margin: 15px 10px;
+}
+
+.input-flex{
+    width: 100%;
+    display: flex;
 }
 
 form.form-container input[type='text'],
@@ -492,6 +481,7 @@ form.form-container input[type='number']{
     font-size: 1rem;
     color: #B3B4B9;
 }
+
 form.form-container input[type='text']::placeholder,
 form.form-container input[type='email']::placeholder,
 form.form-container input[type='number']::placeholder{
@@ -499,7 +489,7 @@ form.form-container input[type='number']::placeholder{
 }
 
 form.form-container textarea{
-    width: 64%;
+    width: 100%;
     margin: 25px 10px;
     background: none;
     border: none;
@@ -515,12 +505,13 @@ form.form-container textarea::placeholder{
 }
 
 .submit-wraper{
-    width: 30%;
+    width: 100%;
     height: 10px;
-    text-align: right;
+    display: block;
 }
 
 form.form-container input[type='submit']{
+    
     background: none;
     border: none;
     color: #ef664d;
@@ -549,17 +540,17 @@ footer .center {
     padding: 20px 0;
 }
 
-footer .center p{
+footer .center address{
     color: #D5D6D7;
     font-size: 17px;
 }
 
-footer p a{
+footer address a{
     color: #ef664d;
     transition: color .3s ease, text-decoration .3s ease;
 }
 
-footer p a:hover{
+footer address a:hover{
     color: #D5D6D7;
     text-decoration: underline;
 }
@@ -617,49 +608,38 @@ footer p a:hover{
         color: #ef664d;
     }
 
-    .work-gallery{
+    .certificate-gallery{
         background: none;
         
     }
 
     form.form-container{
-        display: block;
         padding: 0 2%;
-    }
-
-    .input-wraper{
-        width: 100%;
-        border-bottom: 1px solid #B3B4B9;
-        margin: 15px 0;
-    }
-
-    form.form-container textarea{
-        width: 100% ;
-        margin: 15px 0;
-        background: none;
-        border: none;
-        border-bottom: 1px solid #B3B4B9;
-        font-size: 1rem;
-        color: #B3B4B9;
-        outline:none;
-        resize: none;
-    }
-
-    form.form-container .submit-wraper{
-        width: 100%;
-        text-align: center;
-    }
-
-    form.form-container input[type='submit']{
-        background: none;
-        border: none;
-        color: #ef664d;
-        font-size: 1rem;
-        cursor: pointer;
     }
 }
 
 @media screen and (max-width: 549px){
+    .about-me{
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-user{
+        margin-top: 25px;
+        width: 100%;
+    }
+    
+    .about-user img{
+        max-width: 250px;
+        margin: 15px 0 0 0;
+    }
+
+
     .work-gallery{
         background: none;
         padding: 0;
@@ -710,34 +690,15 @@ footer p a:hover{
         width: 70%;
     }
 
-    .about-me{
-        text-align: center;
-        padding: 40px 0;
-    }
     
-    .about-me h1{
-        color: #2a404e;
-        font-size: 2.3rem;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-family: "Arvo",serif;
-    }
-    
-    .about-container{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .about-img{
-        width: 100%;
-    }
-    
-    .about-img img{
-        max-width: 250px;
-        margin: 15px 0 0 0;
-    }
 
     .single-skill{
         width: 100%;
+    }
+
+    .input-flex{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
     }
 }

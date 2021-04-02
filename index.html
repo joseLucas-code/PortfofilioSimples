@@ -6,59 +6,60 @@
     <meta name="author" content="lucas">
     <meta name="description" content="Site portifólio simples!">
     <meta name=keywords content="projete,pratico,iniciante,html,css,js">
-    <title>Your business</title>
+    <title>Portfólio do Luskas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="IMG/logo.png">
 </head>
 <body>
 
-    <main>
+    
         <div class="scroll-up">
             <i class="fas fa-chevron-up"></i>
         </div><!--## SCROLL UP ##-->
+
         <section class="banner" id="banner">
             <div class="center">
                 <header>
                     
                     <div class="logo">
-                        <a href="#banner"><img src='IMG/logo.png'></a>
+                        <a href="#banner"><img src='IMG/logo.png' alt="Logo"></a>
                     </div>
 
                     <i class="fas fa-bars btnMenu"></i>
     
                     <nav>
                         <ul>
-                            <li><a href="#h" class="link-select">Home</a></li>
-                            <li><a href="#a" data-scrollTO=".about-me">About</a></li>
-                            <li><a href="#w" data-scrollTO=".works">Work</a></li>
-                            <li><a href="#s" data-scrollTO=".services">Services</a></li>
-                            <li><a href="#c" data-scrollTO=".contact">Contact</a></li>
+                            <li><a href="#h" class="link-select">Inicio</a></li>
+                            <li><a href="#a" data-scrollTO=".about-me">Sobre</a></li>
+                            <li><a href="#w" data-scrollTO=".certificate">Certificados</a></li>
+                            <li><a href="#s" data-scrollTO=".services">Serviços</a></li>
+                            <li><a href="#c" data-scrollTO=".contact">Contato</a></li>
                         </ul>
                     </nav>
                 </header>
     
-                <div class="slide-container">
+                <section class="slide-container">
                     <i class="fas fa-chevron-left prevBTN"></i>
                     <i class="fas fa-chevron-right nextBTN"></i>
     
-                    <article class="slide-content fade activeSlide">
+                    <div class="slide-content fade activeSlide">
                         <p>HELLO WORLD,</p>
                             <p>I AM <span>GRAPHIC & WEB DESIGNER</span></p>
                             <p>FROM MOROCCO</p>
-                    </article><!--## SLIDE CONTENT ##-->
+                    </div><!--## SLIDE CONTENT ##-->
     
-                    <article class="slide-content fade">
+                    <div class="slide-content fade">
                         <p>CONTENT HERE,</p>
                             <p>LOREM <span>GRAPHIC & WEB DESIGNER</span></p>
                             <p>CONTRARY</p>
-                    </article><!--## SLIDE CONTENT ##-->
+                    </div><!--## SLIDE CONTENT ##-->
                     
-                    <article class="slide-content fade">
+                    <div class="slide-content fade">
                         <p>LOREM IPSUM,</p>
                             <p>CONTRARY TO <span>& DESIGNER</span></p>
                             <p>REPRODUCED BELOW</p>
-                    </article><!--## SLIDE CONTENT ##-->
+                    </div><!--## SLIDE CONTENT ##-->
     
                     <div class="dot-container">
                         <span class="single-dot activeDot"></span>
@@ -66,240 +67,251 @@
                         <span class="single-dot"></span>
                     </div><!--## DOT CONTAINER ##-->
     
-                </div><!--## SLIDE CONTAINER ##-->
+                </section><!--## SLIDE CONTAINER ##-->
             </div><!--## CENTER ##-->
         </section><!--## BANNER ##-->
 
-        <section class="about-me">
-            <div class="center">
-                <article class="about">
-                    <h1 class="title-dark-blue">About</h1>
+        <main>
+            <section class="about-me">
+                <div class="center">
 
-                    <div class="about-container">
+                    <h2 class="title-dark-blue">Sobre</h2>
 
-                        <div class="about-img">
-                            <img src="IMG/harder.jpg">
-                            <h1>Vidoca</h1>
-                        </div><!--## ABOUT IMG ##-->
+                    
+                        <div class="about-container">
 
-                        <div class="about-content-text">
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                            <div class="about-user">
+                                <img src="IMG/harder.jpg" alt="usuário">
+                                <h3 class="about-username">Luskas Harder</h3>
+                            </div><!--## ABOUT IMG ##-->
 
-                            <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. .</p>
-                        </div><!--## ABOUT CONTENT TEXT ##-->
+                            <div class="about-content-text">
+                                <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
 
-                    </div><!--## ABOUT CONTAINER ##-->
+                                <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. .</p>
+                            </div><!--## ABOUT CONTENT TEXT ##-->
 
-                </article><!--## ABOUT ##-->
+                        </div><!--## ABOUT CONTAINER ##-->
 
-                <article class="skills">
-                    <h1 class="title-dark-blue">Skills</h1>
+                    
 
-                    <div class="skill-flex ">
-                       <div class="single-skill">
-                            <div class="skill-text">
-                                <p>Ser uma gostosa:</p>
-                                <p class="percent">80%</p>
-                            </div><!--## SKILL TEXT ##-->
-        
-                            <div class="skill-bar">
-                                <div class="skill-percent"></div>
-                            </div><!--## SKILL BAR ##-->
-                        </div><!--## SINGLE SKILL ##--> 
-        
-                        <div class="single-skill">
-                            <div class="skill-text">
-                                <p>Ser fofa igual um coice de cavalo:</p>
-                                <p class="percent">80%</p>
-                            </div><!--## SKILL TEXT ##-->
-        
-                            <div class="skill-bar">
-                                <div class="skill-percent"></div>
-                            </div><!--## SKILL BAR ##-->
-                        </div><!--## SINGLE SKILL ##-->
-                        <div class="single-skill">
-                            <div class="skill-text">
-                                <p>me amar:</p>
-                                <p class="percent">80%</p>
-                            </div><!--## SKILL TEXT ##-->
-        
-                            <div class="skill-bar">
-                                <div class="skill-percent"></div>
-                            </div><!--## SKILL BAR ##-->
-                        </div><!--## SINGLE SKILL ##-->
+                    <div class="skills">
+                        <h3 class="title-dark-blue">Habilidades:</h3>
 
-                        <div class="single-skill">
-                            <div class="skill-text">
-                                <p>Ser carinhosa:</p>
-                                <p class="percent">80%</p>
-                            </div><!--## SKILL TEXT ##-->
-        
-                            <div class="skill-bar">
-                                <div class="skill-percent"></div>
-                            </div><!--## SKILL BAR ##-->
-                        </div><!--## SINGLE SKILL ##-->
+                        <div class="skill-flex ">
+
+                            <div class="single-skill">
+                                <div class="skill-text">
+                                    <p>HTML:</p>
+                                    <p class="percent">80%</p>
+                                </div><!--## SKILL TEXT ##-->
+            
+                                <div class="skill-bar">
+                                    <div class="skill-percent"></div>
+                                </div><!--## SKILL BAR ##-->
+                            </div><!--## SINGLE SKILL ##--> 
+            
+                            <div class="single-skill">
+                                <div class="skill-text">
+                                    <p>CSS:</p>
+                                    <p class="percent">80%</p>
+                                </div><!--## SKILL TEXT ##-->
+            
+                                <div class="skill-bar">
+                                    <div class="skill-percent"></div>
+                                </div><!--## SKILL BAR ##-->
+                            </div><!--## SINGLE SKILL ##-->
+
+                            <div class="single-skill">
+                                <div class="skill-text">
+                                    <p>JavaScript:</p>
+                                    <p class="percent">15%</p>
+                                </div><!--## SKILL TEXT ##-->
+            
+                                <div class="skill-bar">
+                                    <div class="skill-percent"></div>
+                                </div><!--## SKILL BAR ##-->
+                            </div><!--## SINGLE SKILL ##-->
+
+                            <div class="single-skill">
+                                <div class="skill-text">
+                                    <p>React JS:</p>
+                                    <p class="percent">0%</p>
+                                </div><!--## SKILL TEXT ##-->
+            
+                                <div class="skill-bar">
+                                    <div class="skill-percent"></div>
+                                </div><!--## SKILL BAR ##-->
+                            </div><!--## SINGLE SKILL ##-->
+
+                            <div class="single-skill">
+                                <div class="skill-text">
+                                    <p>Photoshop:</p>
+                                    <p class="percent">0%</p>
+                                </div><!--## SKILL TEXT ##-->
+            
+                                <div class="skill-bar">
+                                    <div class="skill-percent"></div>
+                                </div><!--## SKILL BAR ##-->
+                            </div><!--## SINGLE SKILL ##-->
+                            
+                        </div><!--## SKILL FLEX ##--> 
+                        
+                    </div><!--## SKILLS ##-->
+
+        <span class="arrow-down"><a href="#w" data-scrollTO=".certificate"><i class="fas fa-chevron-down"></i></a></span>
+
+                </div><!--## CENTER ##-->
+
+            </section><!--## ABOUT ME ##-->
+
+            <section class="certificate">
+
+                <div class="center">
+                    <h2 class="title-orange">Certificados</h2>
+
+                    <div class="certificate-text section-texts">
+                        
+                        <p class="dark-blue-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+
+                    </div><!--## certificate TEXT ##-->
+
+                    <div class="certificate-gallery">
+                        <div class="single-image">
+                            <img src="IMG/certificado-html.jpg" alt="certificado">
+                            <i class="fas fa-search-plus"></i>
+                        </div><!--## SINGLE IMAGE ##-->
+
+                        <div class="single-image">
+                            <img src="IMG/certificado-js.jpg" alt="certificado">
+                            <i class="fas fa-search-plus"></i>
+                        </div><!--## SINGLE IMAGE ##-->
+
+                        <div class="single-image">
+                            <img src="IMG/certificado-nodejs.jpg" alt="certificado">
+                            <i class="fas fa-search-plus"></i>
+                        </div><!--## SINGLE IMAGE ##-->
+
+                        <div class="single-image">
+                            <img src="IMG/certificado-react.png" alt="certificado">
+                            <i class="fas fa-search-plus"></i>
+                        </div><!--## SINGLE IMAGE ##-->
+
+                        <div class="single-image">
+                            <img src="IMG/certificado-photoshop.jpg" alt="certificado">
+                            <i class="fas fa-search-plus"></i>
+                        </div><!--## SINGLE IMAGE ##-->
 
                         
-                    </div><!--## SKILL FLEX ##-->
-        
-                    
-                    
-                </article><!--## SKILLS ##-->
 
-                <span class="arrow-down"><a href="#w" data-scrollTO=".works"><i class="fas fa-chevron-down"></i></a></span>
-            </div><!--## CENTER ##-->
-        </section><!--## ABOUT ME ##-->
+                        <div class="fullView">
+                            <i class="fas fa-times fullViewClose"></i>
 
-        <section class="works" id="work">
+                            <div class="box-image">
+                                <img src="" alt="imagem pop up">
+                            </div><!--## BOX IMAGE ##-->
+                        </div><!--## FULL VIEW ##-->
 
-            <div class="center">
-                <article class="work-text section-texts">
-                    <h1 class="title-orange">Works</h1>
+                    </div><!--## WORK GALLERY ##-->
 
-                    <p class="dark-blue-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                </article><!--## WORK TEXT ##-->
+        <span class="arrow-down"><a href="#s" data-scrollTO=".services"><i class="fas fa-chevron-down"></i></a></span>
+                </div><!--## CENTER ##-->
 
-                <article class="work-gallery">
+                
+            </section><!--## CERTIFICATES ##-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-1.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+            <section class="services" id="services">
+                <div class="center">
+                    <h2 class="title-dark-blue">Serviços</h2>
+                    <div class="services-text section-texts">
+                        
 
-                    <div class="single-image">
-                        <img src="IMG/pic-2.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                        <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                    </div><!--## SERVICER TEXT ##-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-3.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                    <div class="services-icons">
 
-                    <div class="single-image">
-                        <img src="IMG/pic-4.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                        <div class="services-box-single">
+                            <i class="fas fa-desktop"></i>
+                            <h4>WEBDESIGN</h4>
+                            <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                        </div><!--## SERVCES BOX SINGLE ##-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-5.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                        <div class="services-box-single">
+                            <i class="fas fa-print"></i>
+                            <h4>PRINT DESIGN</h4>
+                            <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                        </div><!--## SERVCES BOX SINGLE ##-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-6.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                        <div class="services-box-single">
+                            <i class="fas fa-code"></i>
+                            <h4>WEB DEVELOPMENT</h4>
+                            <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                        </div><!--## SERVCES BOX SINGLE ##-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-7.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+                    </div><!--## SERVICES ICONS-->
 
-                    <div class="single-image">
-                        <img src="IMG/pic-8.jpg">
-                        <i class="fas fa-search"></i>
-                    </div><!--## SINGLE IMAGE ##-->
+        <span class="arrow-down"><a href="#c" data-scrollTO=".contact"><i class="fas fa-chevron-down"></i></a></span>
 
-                    <div class="fullView">
-                        <i class="fas fa-times fullViewClose"></i>
+                </div><!--## CENTER ##-->
 
-                        <div class="box-image">
-                            <img src="IMG/pic00.jpg">
-                        </div><!--## BOX IMAGE ##-->
-                    </div><!--## FULL VIEW ##-->
+            </section><!--## SERVICES ##-->
 
-                </article><!--## WORK GALLERY ##-->
+            <section class="contact" id="contato">
 
-                <span class="arrow-down"><a href="#s" data-scrollTO=".services"><i class="fas fa-chevron-down"></i></a></span>
-            </div><!--## CENTER ##-->
+                <div class="center">
 
-            
-        </section><!--## WORKS-->
+                    <h2 class="title-orange">Contato</h2>
+                    <div class="contact-text section-texts">
+                        
+                        <p class="dark-blue-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
 
-        <section class="services" id="services">
-            <div class="center">
-                <article class="services-text section-texts">
-                    <h1 class="title-dark-blue">Services</h1>
+                    </div><!--## CONTACT TEXT ##-->
 
-                    <p class="white-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                </article><!--## SERVICER TEXT ##-->
+                    <div class="social-medias">
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-behance"></i>
+                        <i class="fas fa-basketball-ball"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div><!--## SOCIAL MEDIAS ##-->
 
-                <article class="services-icons">
+                    <form class="form-container">
+                        <div class="input-flex">
+                            <div class="input-wraper w50">
+                                <input type="text" placeholder="Nome" required>
+                            </div><!--## INPUT WRAPER ##-->
 
-                    <div class="services-box-single">
-                        <i class="fas fa-desktop"></i>
-                        <h4>WEBDESIGN</h4>
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-                    </div><!--## SERVCES BOX SINGLE ##-->
+                            <div class="input-wraper w50">
+                                <input type="email" placeholder="Email" required>
+                            </div><!--## INPUT WRAPER ##-->
+                        </div><!--## INPUT FLEX ##-->
 
-                    <div class="services-box-single">
-                        <i class="fas fa-print"></i>
-                        <h4>PRINT DESIGN</h4>
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-                    </div><!--## SERVCES BOX SINGLE ##-->
+                        <div class="input-wraper">
+                            <input type="text" placeholder="Numero" required>
+                        </div><!--## INPUT WRAPER ##-->
 
-                    <div class="services-box-single">
-                        <i class="fas fa-code"></i>
-                        <h4>WEB DEVELOPMENT</h4>
-                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-                    </div><!--## SERVCES BOX SINGLE ##-->
+                        
+                        <textarea placeholder="Sua Mensagem" required></textarea>
 
-                </article><!--## SERVICES ICONS-->
+                        <div class="submit-wraper">
+                            <input type="submit" value="Enviar Mensagem">
+                        </div>
+                        
 
-                <span class="arrow-down"><a href="#c" data-scrollTO=".contact"><i class="fas fa-chevron-down"></i></a></span>
-            </div><!--## CENTER ##-->
-        </section><!--## SERVICES ##-->
+                    </form><!--## FORM CONTAINER ##-->
 
-        <section class="contact" id="contato">
-            <div class="center">
+                </div><!--## CENTER ##-->
 
-                <article class="contact-text section-texts">
-                    <h1 class="title-orange">Contact</h1>
-
-                    <p class="dark-blue-background">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-                </article><!--## CONTACT TEXT ##-->
-
-                <article class="social-medias">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-google"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-behance"></i>
-                    <i class="fas fa-basketball-ball"></i>
-                    <i class="fab fa-pinterest"></i>
-                </article><!--## SOCIAL MEDIAS ##-->
-
-                <form class="form-container">
-                    <div class="input-wraper">
-                        <input type="text" placeholder="Name" required>
-                    </div><!--## INPUT WRAPER ##-->
-
-                    <div class="input-wraper">
-                        <input type="email" placeholder="Email" required>
-                    </div><!--## INPUT WRAPER ##-->
-
-                    <div class="input-wraper">
-                        <input type="text" placeholder="Phone" required>
-                    </div><!--## INPUT WRAPER ##-->
-
-                    
-                    <textarea placeholder="Your Menssage" required></textarea>
-
-                    <div class="submit-wraper">
-                        <input type="submit" value="[Send mensage]">
-                    </div>
-                    
-
-                </form><!--## FORM CONTAINER ##-->
-            </div><!--## CENTER ##-->
-        </section><!--## CONTANT ##-->
+            </section><!--## CONTACT ##-->
         
     </main>
 
     <footer>
         <div class="center">
-            <p class="dark-blue-background">© 2015 Onepage . All rights Reserved | Template by <a href="#">Template Stock</a></p>
+            <address class="dark-blue-background">© 2021 . All rights Reserved | Template by <a href="https://www.instagram.com/lucas_ferr3ira/?hl=">Luskas Harder</a></address>
         </div><!--## CENTER ##-->
     </footer>
 

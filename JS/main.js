@@ -1,14 +1,59 @@
 // menu mobile
 
 const menuMobile = document.querySelector('i.btnMenu')
+const menu = document.querySelector('header nav')
 
 menuMobile.addEventListener('click', ()=>{
-    const menu = document.querySelector('header nav')
+    
 
     menu.classList.toggle('menuOpen')
 
     document.body.classList.toggle('overflowHidden')
 })
+
+// scrollTo navigation
+
+const arrowDown = document.querySelectorAll('.arrow-down a')
+const LinkMenu = document.querySelectorAll('header nav ul li a')
+
+
+LinkMenu.forEach((linkMenu, indexLink) => {
+    linkMenu.addEventListener('click', () => {
+
+        if(indexLink > 0){
+            if(menu.classList.contains('menuOpen') && document.body.classList.contains('overflowHidden')){
+                menu.classList.remove('menuOpen')
+                document.body.classList.remove('overflowHidden')
+            }
+
+            let arrowDownAttribute = LinkMenu[indexLink].getAttribute('data-scrollTO')
+
+            scrollWin(arrowDownAttribute)
+        }
+
+
+
+    })
+})
+
+arrowDown.forEach((arrow, indexArrow) => {
+    arrow.addEventListener('click', (e) => {
+
+        let arrowDownAttribute = arrowDown[indexArrow].getAttribute('data-scrollTO')
+        scrollWin(arrowDownAttribute)
+
+    })
+})
+
+function scrollWin(el){
+    let scrollID = document.querySelector(el)
+
+    scrollID.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    })
+
+}
 
 //slide 
 
@@ -56,41 +101,7 @@ setInterval(function(){
     mudarSlide();
 },5000)
 
-// scrollTo navigation
 
-const arrowDown = document.querySelectorAll('.arrow-down a')
-const LinkMenu = document.querySelectorAll('header nav ul li a')
-
-
-LinkMenu.forEach((linkMenu, indexLink) => {
-    linkMenu.addEventListener('click', () => {
-
-        if(indexLink > 0){
-            let arrowDownAttribute = LinkMenu[indexLink].getAttribute('data-scrollTO')
-            scrollWin(arrowDownAttribute)
-        }
-
-    })
-})
-
-arrowDown.forEach((arrow, indexArrow) => {
-    arrow.addEventListener('click', (e) => {
-
-        let arrowDownAttribute = arrowDown[indexArrow].getAttribute('data-scrollTO')
-        scrollWin(arrowDownAttribute)
-
-    })
-})
-
-function scrollWin(el){
-    let scrollID = document.querySelector(el)
-
-    scrollID.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    })
-
-}
 
 //SCROLL TO TOP 
 
@@ -115,39 +126,42 @@ window.addEventListener('scroll', ()=>{
     const textPercent = document.querySelectorAll('.percent');
     const skillPercent = document.querySelectorAll('.skill-percent');
 
-    textPercent[0].innerText = "100%";
-    skillPercent[0].style.width = "100%";
+    textPercent[0].innerText = "80%";
+    skillPercent[0].style.width = "80%";
 
-    textPercent[1].innerText = "100%";
-    skillPercent[1].style.width = "100%";
+    textPercent[1].innerText = "80%";
+    skillPercent[1].style.width = "80%";
 
-    textPercent[2].innerText = "10%";
-    skillPercent[2].style.width = "10%";
-
-    textPercent[3].innerText = "85%";
-    skillPercent[3].style.width = "85%";
+    textPercent[2].innerText = "15%";
+    skillPercent[2].style.width = "15%";
 
 
 })();
 
 
-// works
+// Certificates
 
-const singlesImages = document.querySelectorAll('.single-image')
-const fullView = document.querySelector('.fullView')
-const closeView = document.querySelector('.fullViewClose')
+const singlesBoxImages = document.querySelectorAll('.single-image')
 
+singlesBoxImages.forEach((box,boxIndex)=> box.addEventListener('click',()=>{
+    const fullView = document.querySelector('.fullView')
+    const closeView = document.querySelector('.fullViewClose')
+    const fullScreenImageBox = document.querySelector('.box-image img')
+    const singlesImages = document.querySelectorAll('.single-image img')
 
-singlesImages.forEach((box,boxIndex)=> box.addEventListener('click',()=>{
-    const boxImage = document.querySelector('.box-image img')
-    
+    //open full View
     fullView.classList.add('fullViewOpen')
     document.body.classList.add('overflowHidden')
-    boxImage.src = `IMG/pic-${(boxIndex + 1)}.jpg`
+
+    //pop up images
+    let imgAttr = singlesImages[boxIndex].getAttribute('src')
+    fullScreenImageBox.src = imgAttr
+
+    //close Full view
+    closeView.onclick = function(){
+        fullView.classList.remove('fullViewOpen')
+        document.body.classList.remove('overflowHidden')
+    }
 }))
 
 
-closeView.onclick = function(){
-    fullView.classList.remove('fullViewOpen')
-    document.body.classList.remove('overflowHidden')
-}
