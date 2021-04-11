@@ -11,50 +11,6 @@ menuMobile.addEventListener('click', ()=>{
     document.body.classList.toggle('overflowHidden')
 })
 
-// scrollTo navigation
-
-const arrowDown = document.querySelectorAll('.arrow-down a')
-const LinkMenu = document.querySelectorAll('header nav ul li a')
-
-
-LinkMenu.forEach((linkMenu, indexLink) => {
-    linkMenu.addEventListener('click', () => {
-
-        if(indexLink > 0){
-            if(menu.classList.contains('menuOpen') && document.body.classList.contains('overflowHidden')){
-                menu.classList.remove('menuOpen')
-                document.body.classList.remove('overflowHidden')
-            }
-
-            let arrowDownAttribute = LinkMenu[indexLink].getAttribute('data-scrollTO')
-
-            scrollWin(arrowDownAttribute)
-        }
-
-
-
-    })
-})
-
-arrowDown.forEach((arrow, indexArrow) => {
-    arrow.addEventListener('click', (e) => {
-
-        let arrowDownAttribute = arrowDown[indexArrow].getAttribute('data-scrollTO')
-        scrollWin(arrowDownAttribute)
-
-    })
-})
-
-function scrollWin(el){
-    let scrollID = document.querySelector(el)
-
-    scrollID.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    })
-
-}
-
 //slide 
 
 const slideContent = document.querySelectorAll('.slide-content')
@@ -109,7 +65,7 @@ const sectionBanner = document.querySelector('section.banner')
 
 window.addEventListener('scroll', ()=>{
     const scrollUP = document.querySelector('.scroll-up')
-    scrollUP.classList.toggle('scrollDisplay', window.scrollY > sectionBanner.clientHeight)
+    scrollUP.classList.toggle('scrollDisplay', window.scrollY > (sectionBanner.clientHeight - 50))
 
     scrollUP.addEventListener('click', ()=>{
         document.body.scrollIntoView({
