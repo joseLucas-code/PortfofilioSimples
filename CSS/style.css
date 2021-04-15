@@ -135,7 +135,7 @@ header nav ul li a.link-select{
 }
 
 .slide-container{
-    height: 450px;
+    min-height: 500px;
     position: relative;
     display: flex;
     align-items: center;
@@ -317,7 +317,7 @@ section.certificate{
 .certificate-gallery{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(310px,1fr));
     gap: 20px;
     padding: 0 2%;
     text-align: center;
@@ -326,6 +326,7 @@ section.certificate{
 .single-image {
     position: relative;
     cursor: pointer;
+    background:black
 }
 
 .single-image img{
