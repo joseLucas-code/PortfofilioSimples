@@ -2,14 +2,17 @@
 
 const menuMobile = document.querySelector('i.btnMenu')
 const menu = document.querySelector('header nav')
+const menuLinks = document.querySelectorAll('.banner nav ul li a')
 
 menuMobile.addEventListener('click', ()=>{
-    
-
     menu.classList.toggle('menuOpen')
-
     document.body.classList.toggle('overflowHidden')
 })
+
+menuLinks.forEach(link => link.addEventListener('click', function(){
+    menu.classList.remove('menuOpen')
+    document.body.classList.remove('overflowHidden')
+}))
 
 //slide 
 
