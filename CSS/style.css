@@ -96,6 +96,7 @@ i.fa-chevron-down{
     background-image: url(../IMG/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 header{
@@ -210,6 +211,7 @@ span.single-dot.activeDot{
 .about-me{
     text-align: center;
     padding: 40px 0;
+    min-height: 100vh;
 }
 
 .about-me h2{
@@ -313,27 +315,21 @@ section.certificate{
 }
 
 .certificate-gallery{
-    min-height: 500px;
-    background: url(../IMG/left.png) no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 15px 0;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));
+    gap: 20px;
+    padding: 0 2%;
+    text-align: center;
 }
 
 .single-image {
-    width: 275px;
-    height: 221px;
     position: relative;
-    padding: 5px 7px 0 7px;
-    margin-bottom: 20px;
     cursor: pointer;
 }
 
 .single-image img{
     width: 100%;
-    max-width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -345,7 +341,7 @@ section.certificate{
     font-size: 2rem;
     color: #ef664d;
     opacity: 0;
-    transition: .3s ease;
+    transition: top .3s ease;
     transform: translate(-50%,-50%);  
 }
 
@@ -435,6 +431,7 @@ section.contact{
     background: #2E3E4E;
     text-align: center;
     padding: 40px 0;
+    
 }
 .social-medias{
     text-align: center;
@@ -460,15 +457,15 @@ form.form-container{
     margin: 0 auto;
 }
 
-.input-wraper{
+.input-grid{
     width: 100%;
-    border-bottom: 1px solid #B3B4B9;
-    margin: 15px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.input-flex{
-    width: 100%;
-    display: flex;
+.input-grid-span{
+    grid-column: span 2;
 }
 
 form.form-container input[type='text'],
@@ -481,6 +478,11 @@ form.form-container input[type='number']{
     outline:none;
     font-size: 1rem;
     color: #B3B4B9;
+    border-bottom: 1px solid #B3B4B9;
+}
+
+form.form-container input[type='number']{
+    grid-column: span 2;
 }
 
 form.form-container input[type='text']::placeholder,
@@ -490,8 +492,6 @@ form.form-container input[type='number']::placeholder{
 }
 
 form.form-container textarea{
-    width: 100%;
-    margin: 25px 10px;
     background: none;
     border: none;
     border-bottom: 1px solid #B3B4B9;
@@ -499,6 +499,7 @@ form.form-container textarea{
     color: #B3B4B9;
     outline:none;
     resize: none;
+    grid-column: span 2;
 }
 
 form.form-container textarea::placeholder{
@@ -509,6 +510,7 @@ form.form-container textarea::placeholder{
     width: 100%;
     height: 10px;
     display: block;
+    margin-top: 30px;
 }
 
 form.form-container input[type='submit']{
@@ -610,11 +612,6 @@ footer address a:hover{
         color: #ef664d;
     }
 
-    .certificate-gallery{
-        background: none;
-        
-    }
-
     form.form-container{
         padding: 0 2%;
     }
@@ -646,35 +643,6 @@ footer address a:hover{
         background: none;
         padding: 0;
     }
-    
-    .single-image {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 5px 7px;
-    }
-    
-    .single-image img{
-        width: 100%;
-        max-width: 100%;
-        cursor: pointer;
-    }
-    
-    .single-image i {  
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        font-size: 2rem;
-        color: #ef664d;
-        opacity: 0;
-        transition: .3s ease;
-        transform: translate(-50%,-50%);  
-    }
-
-    .single-image:hover i {
-        opacity: 1;
-        top: 50%;
-    }
 
     .box-image img{
         object-fit: contain;
@@ -684,6 +652,22 @@ footer address a:hover{
         height: 100vh;
         min-height: 100%;
     }
+
+    /* contact */
+
+    .input-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .input-grid-span{
+        grid-column: span 1;
+    }
+    form.form-container input[type='number']{
+        grid-column: span 1;
+    }
+    form.form-container textarea{
+        grid-column: span 1;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -691,8 +675,6 @@ footer address a:hover{
         font-size: 1.7rem;
         width: 70%;
     }
-
-    
 
     .single-skill{
         width: 100%;

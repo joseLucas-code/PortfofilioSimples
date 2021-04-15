@@ -61,11 +61,11 @@ setInterval(function(){
 
 //SCROLL TO TOP 
 
-const sectionBanner = document.querySelector('section.banner')
+const sectionBanner = document.querySelector('.banner')
 
 window.addEventListener('scroll', ()=>{
     const scrollUP = document.querySelector('.scroll-up')
-    scrollUP.classList.toggle('scrollDisplay', window.scrollY > (sectionBanner.clientHeight - 50))
+    scrollUP.classList.toggle('scrollDisplay', window.scrollY > (sectionBanner.clientHeight * 0.5))
 
     scrollUP.addEventListener('click', ()=>{
         document.body.scrollIntoView({
